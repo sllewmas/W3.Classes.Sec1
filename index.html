@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Specifies the document type and language -->
-    <meta charset="UTF-8"> <!-- Defines character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on different devices -->
-    <title>Objects and Classes</title> <!-- Title of the webpage -->
-    <script src="script.js"></script> <!-- Links an external JavaScript file -->
+    <meta charset="UTF-8" />
+    <!-- Defines character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    Ensures responsive design on different devices
+    <title>Objects and Classes</title>
+    <!-- Title of the webpage -->
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file -->
     <style>
-        /* Styles for the entire page */
-        body {
-            font-family: Arial, sans-serif; /* Sets font style */
-            margin: 20px; /* Adds space around the content */
-            padding: 20px; /* Adds space inside the body */
-            background-color: #f4f4f4; /* Light gray background */
-        }
+      /* Styles for the entire page */
+      body {
+        font-family: Arial, sans-serif; /* Sets font style */
+        margin: 20px; /* Adds space around the content */
+        padding: 20px; /* Adds space inside the body */
+        background-color: #f4f4f4; /* Light gray background */
+      }
 
-        /* Styles for code blocks */
-        pre {
-            background: #333; /* Dark background for contrast */
-            color: #fff; /* White text for readability */
-            padding: 10px; /* Adds space inside the box */
-            border-radius: 5px; /* Rounds the corners */
-            overflow-x: auto; /* Allows scrolling for long lines */
-        }
+      /* Styles for code blocks */
+      pre {
+        background: #333; /* Dark background for contrast */
+        color: #fff; /* White text for readability */
+        padding: 10px; /* Adds space inside the box */
+        border-radius: 5px; /* Rounds the corners */
+        overflow-x: auto; /* Allows scrolling for long lines */
+      }
 
-        /* Styles for inline code snippets */
-        code {
-            font-family: "Courier New", monospace; /* Uses monospaced font */
-        }
+      /* Styles for inline code snippets */
+      code {
+        font-family: "Courier New", monospace; /* Uses monospaced font */
+      }
     </style>
-</head>
-<body>
-<!-- Main heading of the page -->
-<h1>Objects and Classes</h1>
+  </head>
+  <body>
+    <!-- Main heading of the page -->
+    <h1>Objects and Classes</h1>
 
-<!-- Explanation of objects -->
-<p><strong>Objects</strong> are collections of key-value pairs that store data and behavior (methods). They can be created using object literals (<code>{}</code>) or constructors.</p>
+    <!-- Explanation of objects -->
+    <p>
+      <strong>Objects</strong> are collections of key-value pairs that store
+      data and behavior (methods). They can be created using object literals
+      (<code>{}</code>) or constructors.
+    </p>
 
-<!-- Code example for creating an object -->
-<pre><code>const guitar = {
+    <!-- Code example for creating an object -->
+    <pre><code>const guitar = {
     make: "Gibson", // Brand of the guitar
     model: "Les Paul", // Model name
     drive: function() { // Method that simulates playing the guitar
@@ -46,11 +54,15 @@
     }
 };</code></pre>
 
-<!-- Explanation of classes -->
-<p><strong>Classes</strong> are templates for creating multiple objects with shared properties and methods. They provide a structured way to define object blueprints.</p>
+    <!-- Explanation of classes -->
+    <p>
+      <strong>Classes</strong> are templates for creating multiple objects with
+      shared properties and methods. They provide a structured way to define
+      object blueprints.
+    </p>
 
-<!-- Code example for defining a class -->
-<pre><code>class Guitar {
+    <!-- Code example for defining a class -->
+    <pre><code>class Guitar {
     /**
      * Creates a new Guitar instance.
      * @param {string} make - The brand of the Guitar (e.g., "Gibson").
@@ -71,12 +83,18 @@
 const myGuitar1 = new Guitar("Gibson", "Les Paul"); // Gibson guitar instance
 const myGuitar2 = new Guitar("Fender", "Stratocaster"); // Fender guitar instance</code></pre>
 
-<!-- Section to highlight key differences -->
-<h2>Key Differences:</h2>
-<ul>
-    <li>Objects are instances with their own properties and methods.</li>
-    <li>Classes define the blueprint for creating multiple objects with a consistent structure.</li>
-    <li>Objects can be created ad hoc, while classes allow reusable and scalable object creation.</li>
-</ul>
-</body>
+    <!-- Section to highlight key differences -->
+    <h2>Key Differences:</h2>
+    <ul>
+      <li>Objects are instances with their own properties and methods.</li>
+      <li>
+        Classes define the blueprint for creating multiple objects with a
+        consistent structure.
+      </li>
+      <li>
+        Objects can be created ad hoc, while classes allow reusable and scalable
+        object creation.
+      </li>
+    </ul>
+  </body>
 </html>
